@@ -29,8 +29,8 @@ public class WordAdapter  extends ArrayAdapter<Word> {
         }
 
         Word currentWord = getItem(position);
-        TextView germanTextView = (TextView) listItemView.findViewById(R.id.hanguk_text_view);
-        germanTextView.setText(currentWord.getGermanTranslation());
+        TextView koreanTextView = (TextView) listItemView.findViewById(R.id.hanguk_text_view);
+        koreanTextView.setText(currentWord.getKoreanTranslation());
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
